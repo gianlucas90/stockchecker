@@ -17,7 +17,8 @@ app.use(helmet());
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      scriptSrc: ["'self'"],
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", 'https://code.jquery.com'],
       styleSrc: ["'self'"],
       // defaultSrc: ["'self'"],
       // scriptSrc: [
