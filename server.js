@@ -17,11 +17,8 @@ app.use(helmet());
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      scriptSrc: [
-        "'self'",
-        "'https://stockchecker-gianlucas90.herokuapp.com/'",
-      ],
-      styleSrc: ["'self'", "'https://stockchecker-gianlucas90.herokuapp.com/'"],
+      scriptSrc: ["'self'", "'stockchecker-gianlucas90.herokuapp.com/'"],
+      styleSrc: ["'self'", "'stockchecker-gianlucas90.herokuapp.com/'"],
     },
   })
 );
