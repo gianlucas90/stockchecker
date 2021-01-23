@@ -22,7 +22,11 @@ app.use(
         'stockchecker-gianlucas90.herokuapp.com/',
         'code.jquery.com',
       ],
-      styleSrc: ["'self'", 'stockchecker-gianlucas90.herokuapp.com/'],
+      styleSrc: [
+        "'self'",
+        "'unsafe-inline'",
+        'stockchecker-gianlucas90.herokuapp.com/',
+      ],
     },
   })
 );
