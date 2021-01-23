@@ -17,6 +17,12 @@ app.use(helmet());
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
+      default: [
+        "'self'",
+        "'unsafe-inline'",
+        'stockchecker-gianlucas90.herokuapp.com/',
+        'code.jquery.com',
+      ],
       scriptSrc: [
         "'self'",
         "'unsafe-inline'",
