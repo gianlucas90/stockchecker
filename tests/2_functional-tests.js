@@ -68,6 +68,9 @@ suite('Functional Tests', function () {
       chai
         .request(server)
         .get('/api/stock-prices?stock=GOOG&stock=MSFT')
+        .query({
+          like: false,
+        })
         .end(function (err, res) {
           assert.equal(res.status, 200);
           assert.isArray(res.body.stockData);
