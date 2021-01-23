@@ -17,18 +17,20 @@ app.use(helmet());
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      defaultSrc: ["'self'"],
-      scriptSrc: [
-        "'self'",
-        "'unsafe-inline'",
-        'stockchecker-gianlucas90.herokuapp.com/',
-        'code.jquery.com',
-      ],
-      styleSrc: [
-        "'self'",
-        "'unsafe-inline'",
-        'stockchecker-gianlucas90.herokuapp.com/',
-      ],
+      scriptSrc: ["'self'"],
+      styleSrc: ["'self'"],
+      // defaultSrc: ["'self'"],
+      // scriptSrc: [
+      //   "'self'",
+      //   "'unsafe-inline'",
+      //   'stockchecker-gianlucas90.herokuapp.com/',
+      //   'code.jquery.com',
+      // ],
+      // styleSrc: [
+      //   "'self'",
+      //   "'unsafe-inline'",
+      //   'stockchecker-gianlucas90.herokuapp.com/',
+      // ],
     },
   })
 );
