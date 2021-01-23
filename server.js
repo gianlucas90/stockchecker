@@ -19,6 +19,7 @@ app.use(
     directives: {
       scriptSrc: [
         "'self'",
+        "'unsafe-inline'",
         'stockchecker-gianlucas90.herokuapp.com/',
         'code.jquery.com',
       ],
